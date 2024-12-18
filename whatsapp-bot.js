@@ -87,7 +87,7 @@ client.on("message", async (message) => {
               await transporter.sendMail(mailOptions);
               client.sendMessage(
                 message.from,
-                "Your emergency has been reported. We will get back to you ASAP."
+                "Your emergency has been reported as E-Mail. We will get back to you ASAP."
               );
             } catch (error) {
               console.error("Error sending email:", error);
