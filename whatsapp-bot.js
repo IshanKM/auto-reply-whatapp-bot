@@ -6,7 +6,7 @@ require("dotenv").config();
 const client = new Client();
 
 let lastActivityTime = Date.now(); // Timestamp for your last activity
-const inactivityThreshold = 2 * 60 * 1000; // 2 minutes in milliseconds
+const inactivityThreshold = 4 * 60 * 60 * 1000; // 4 hours in milliseconds
 const repliedUsers = new Set(); // Track users who have been replied to within the inactivity period
 
 // Email setup
